@@ -16,6 +16,7 @@ def main():
     num_of_words = num_of_words_in_text(text)
     frequency_of_chars = chars_frequency(text)
     list_of_chars = sorted_list(frequency_of_chars)
+
     print("============ BOOKBOT ============")
     print(f"Analyzing book found at {filepath}...")
     print("----------- Word Count ----------")
@@ -25,4 +26,5 @@ def main():
         if value["char"].isalpha():
             print(f"{value["char"]}: {value["num"]}")
     print("============= END ===============")
+    
 main()
